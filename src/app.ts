@@ -12,7 +12,11 @@ app.use(morgan("short"));
 app.use(bodyParser.json() );
 
 // Enable CORS
-app.use(cors());
+const corsOptions = {
+  origin: 'https://seahorse-app-466t4.ondigitalocean.app',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+app.use(cors(corsOptions));
 
 // Favicon Handler
 app.get("/favicon.ico", (_, res) => res.status(204).end());
