@@ -13,8 +13,8 @@ app.use(bodyParser.json() );
 
 // Enable CORS
 const corsOptions = {
-  origin: 'https://seahorse-app-466t4.ondigitalocean.app',
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  origin: '*',
+  optionsSuccessStatus: 200
 }
 app.use(cors(corsOptions));
 
