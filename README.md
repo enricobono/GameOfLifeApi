@@ -7,8 +7,8 @@ This repository contains the backend part of a demo implementation of Conway's G
 
 Follow these steps to set up your local development environment:
 
-- Install the dependencies by running `npm install`.
-- Run the service using `npm dev`.
+- Install the dependencies by running `npm install`
+- Run the service using `npm dev`
 
 
 ## Testing
