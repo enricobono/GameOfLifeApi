@@ -16,14 +16,14 @@ app.use(bodyParser.json() );
 //   origin: '*'
 // }
 // app.use(cors(corsOptions));
-app.use(function(req, res, next) {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Credentials', 'true');
-  res.header('Access-Control-Allow-Headers', '*');
-  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
-  res.header('Access-Control-Expose-Headers', '*');
-  next();
-});
+// app.use(function(req, res, next) {
+//   res.header('Access-Control-Allow-Origin', '*');
+//   res.header('Access-Control-Allow-Credentials', 'true');
+//   res.header('Access-Control-Allow-Headers', '*');
+//   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+//   res.header('Access-Control-Expose-Headers', '*');
+//   next();
+// });
 
 // Favicon Handler
 app.get("/favicon.ico", (_, res) => res.status(204).end());
